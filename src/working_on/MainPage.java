@@ -17,13 +17,14 @@ import java.awt.event.ActionListener;
 public class MainPage implements ActionListener {
 
     JFrame frame = new JFrame("База данных аптеки - Главное меню");
-    JButton clTableButton = new JButton("Таблица клиентов"), recipesTableButton = new JButton("Таблица рецептов"),
+    JButton clTableButton = new JButton("Таблица клиентов"),
+            recipesTableButton = new JButton("Таблица рецептов"),
             ordTableButton = new JButton("Таблица заказов"),
-    appointsTableButton = new JButton("Таблица назначений"),
-    medsTableButton = new JButton("Таблица лекарств"),
+            appointsTableButton = new JButton("Таблица назначений"),
+            medsTableButton = new JButton("Таблица лекарств"),
             whTableButton = new JButton("Склад"),
             statsTableButton = new JButton("Статистика"),
-    owTableButton = new JButton("Заказы со статусом: В ожидании");
+            owTableButton = new JButton("Заказы со статусом: В ожидании");
     JLabel mainText = new JLabel("Главное меню"),
     addFunctional = new JLabel("Дополнительный функционал");
     public MainPage() {
