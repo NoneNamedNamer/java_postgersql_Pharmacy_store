@@ -11,6 +11,7 @@ import java.sql.Connection;
 public class ClientsPanel extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 38437145902853L;
+
     Connection conn;
     ClientsTableModel ctm = new ClientsTableModel();
     JTable clientsTable = new JTable(ctm);
@@ -62,7 +63,7 @@ public class ClientsPanel extends JPanel implements ActionListener {
         if (e.getSource() == srcRow) {
             try {
                 ctm.search_data(conn, "pharmacy_db.Клиенты", String.valueOf(par.getSelectedItem()), text1.getText());
-                repaint();
+                clientsTable.repaint();
                 Thread.sleep(1000);
             } catch (Exception r) {
                 r.printStackTrace();

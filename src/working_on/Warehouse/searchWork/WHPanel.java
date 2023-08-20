@@ -59,7 +59,7 @@ public class WHPanel extends JPanel implements ActionListener {
         if (e.getSource() == srcRow) {
             try {
                 whtm.search_data_wh(conn, "pharmacy_db.Склад", String.valueOf(par.getSelectedItem()), text1.getText());
-                repaint();
+                whTable.repaint();
                 Thread.sleep(100);
             } catch (InterruptedException r) {
                 r.printStackTrace();

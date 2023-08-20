@@ -63,7 +63,7 @@ public class OrdersPanel extends JPanel implements ActionListener {
         if (e.getSource() == srcRow) {
             try {
                 ctm.search_data_ord(conn, "pharmacy_db.Заказы", String.valueOf(par.getSelectedItem()), text1.getText());
-                repaint();
+                ordersTable.repaint();
                 Thread.sleep(1000);
             } catch (Exception r) {
                 r.printStackTrace();

@@ -58,7 +58,7 @@ public class AppointsPanel extends JPanel implements ActionListener {
         if (e.getSource() == srcRow) {
             try {
                 atm.search_data_app(conn, "pharmacy_db.Назначения", String.valueOf(par.getSelectedItem()), text1.getText());
-                repaint();
+                appointsTable.repaint();
                 Thread.sleep(100);
             } catch (InterruptedException r) {
                 r.printStackTrace();

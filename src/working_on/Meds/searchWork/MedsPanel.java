@@ -62,7 +62,7 @@ public class MedsPanel extends JPanel implements ActionListener {
         if (e.getSource() == srcRow) {
             try {
                 mtm.search_data_meds(conn, "pharmacy_db.Изготовляемые_лекарства", String.valueOf(par.getSelectedItem()), text1.getText());
-                repaint();
+                medsTable.repaint();
                 Thread.sleep(1000);
             } catch (Exception r) {
                 r.printStackTrace();

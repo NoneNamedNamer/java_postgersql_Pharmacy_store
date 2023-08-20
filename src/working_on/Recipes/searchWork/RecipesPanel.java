@@ -61,7 +61,7 @@ public class RecipesPanel extends JPanel implements ActionListener {
         if (e.getSource() == srcRow) {
             try {
                 rtm.search_data_rec(conn, "pharmacy_db.Рецепты", String.valueOf(par.getSelectedItem()), text1.getText());
-                repaint();
+                recipesTable.repaint();
                 Thread.sleep(100);
             } catch (InterruptedException r) {
                 r.printStackTrace();
